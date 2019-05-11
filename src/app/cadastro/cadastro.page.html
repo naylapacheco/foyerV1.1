@@ -1,0 +1,167 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start"></ion-buttons>
+      <ion-back-button></ion-back-button>
+    
+  </ion-toolbar>
+</ion-header>
+
+<div id="header">
+<img src="../../assets/img/logo.png" id="img"/>  
+<h3>Bem vindo ao<br> Domum!</h3>
+<p align="justify">Preencha as informações do <br> formulário abaixo para começar<br> essa magnifica experiência</p>
+</div>
+
+<ion-content padding align="center">
+<ion-list class="login">
+  <ion-item>
+
+    <ion-label position="floating">Nome Completo:</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Nome de usuário</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Senha</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+
+  <ion-item>
+
+    <ion-label position="floating">Confirmar Senha</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+
+      <ion-item>
+        <ion-radio-group>
+          <ion-list-header>
+            <ion-label>Sexo</ion-label>
+          </ion-list-header>
+      
+          <ion-item>
+            <ion-label>Feminino</ion-label>
+            <ion-radio slot="start" value="F" checked></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Masculino</ion-label>
+            <ion-radio slot="start" value="M"></ion-radio>
+          </ion-item>
+      
+        </ion-radio-group>
+        </ion-item>
+          
+        <ion-item>
+          <ion-label>Data de Nascimento</ion-label>
+          <ion-datetime displayFormat="DD MM YYYY"></ion-datetime>
+        </ion-item>
+
+<ion-grid>
+<ion-row>
+  <ion-col width-50>
+    <ion-item>
+      <ion-label position="floating">CPF</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col width-50>
+    <ion-item>
+      <ion-label position="floating">RG</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </ion-col>
+</ion-row>
+</ion-grid>
+
+<ion-grid>
+<ion-row>
+  <ion-col width-50>
+    <ion-item>
+      <ion-label position="floating">Endereço</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col width-50>
+    <ion-item>
+      <ion-label position="floating">Nº</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+</ion-row>
+</ion-grid>
+
+<ion-item>
+<ion-label position="floating">Nome do Condominio</ion-label>
+<ion-input type="text"></ion-input>
+</ion-item>
+
+<ion-grid>
+<ion-row>
+  <ion-col width-50>
+    <ion-item>
+      <ion-label position="floating">Bloco</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col width-50>
+    <ion-item>
+      <ion-label position="floating">Nº apartamento</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+</ion-row>
+</ion-grid>
+
+<ion-grid>
+<ion-row>
+  <ion-col width-50>
+    <ion-item>
+      <ion-label position="floating">Cidade</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col width-50>
+    <ion-item>
+      <ion-label position="floating">País</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </ion-col>
+</ion-row>
+</ion-grid>
+
+<ion-grid>
+<ion-row>
+  <ion-col width-50>
+    <ion-item>
+      <ion-label position="floating">CEP</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col width-50>
+    <ion-item>
+      <ion-label position="floating">Estado</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </ion-col>
+</ion-row>
+</ion-grid>
+
+
+        
+
+  </ion-list>
+
+<ion-button type="submit" color="secondary" class="btn">Cadastrar</ion-button>
+
+
+
+</ion-content>

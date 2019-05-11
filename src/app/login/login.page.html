@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title align = center>
+      Domum
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding align=center color="secondary">
+
+    <img src="../../assets/img/logo.png" class="logo"/>
+      
+
+      <ion-list class="login">
+    
+        <ion-item>
+          <ion-label position="floating">Numero ID:</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+       <ion-item>
+          <ion-label position="floating">Senha:</ion-label>
+          <ion-input type="password"></ion-input>
+       </ion-item>
+
+      </ion-list>
+    <ion-button ion-button type="submit" color="secondary" class="btn" >Entrar</ion-button>
+    <p>Ou</p>
+    <ion-button [routerLink]="['/inicio/']" class="btn" color="secondary">Cadastrar-se</ion-button>
+    <ion-button [routerLink]="['/mensagens/']" class="btn" color="secondary">Mensagens</ion-button>
+    <ion-button [routerLink]="['/perfil/']" class="btn" color="secondary">Perfil</ion-button>
+    <ion-button [routerLink]="['/notificacoes/']" class="btn" color="secondary">Notificações</ion-button>
+ 
+  </ion-content>

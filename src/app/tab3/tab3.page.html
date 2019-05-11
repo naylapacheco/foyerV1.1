@@ -1,0 +1,60 @@
+<ion-header>
+    
+  <ion-toolbar align=center color="secondary">
+    <div id="header">
+        <ion-avatar>
+            <img align=center src="../../assets/img/logo.png"/>
+        </ion-avatar>
+      </div>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content padding align=center>
+  
+       
+  <ion-label align="center" class="sizedescricao">Condomínio</ion-label>
+  
+
+
+  <ion-label align="center"  class="sizedescricao">Apartamento</ion-label>
+  
+
+
+  <ion-label align="center"  class="sizedescricao">Bloco</ion-label>
+  
+
+
+<ion-item>
+  <ion-label align="center"  class="sizeinfo">{{condominio}}</ion-label>
+  <ion-label align="center"  class="sizeinfo">{{apartamento}}</ion-label>
+  <ion-label align="center"  class="sizeinfo">{{bloco}}</ion-label>
+  </ion-item>
+
+
+
+
+
+<ion-list class="login">
+<br>
+<br>
+<ion-item [routerLink]="['//']">Reuniões do Condomínio</ion-item>         
+<ion-item [routerLink]="['//']">Meus Eventos</ion-item>
+<ion-item [routerLink]="['//']">Meus Planos</ion-item>
+
+</ion-list>
+
+<ion-list class="login">
+
+  <ion-item [routerLink]="['/cadastro/']">Configurações de Notificações</ion-item>         
+  <ion-item [routerLink]="['/login/']">Cartões de Crédito Salvos</ion-item>
+  <ion-item [routerLink]="['//']">Idioma do Aplicativo</ion-item>
+  <ion-item [routerLink]="['//']">Sobre</ion-item>         
+  <ion-item [routerLink]="['//']">Ajuda e Suporte</ion-item>
+  <ion-item [routerLink]="['//']">Dê seu Feedback</ion-item>
+  <ion-item [routerLink]="['//']">Sair</ion-item>
+</ion-list>
+
+
+
+</ion-content>
