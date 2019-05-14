@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>usuarios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item-sliding *ngFor="let tudo of todos">
+      <ion-item lines="inset" button [routerLink]="['/info', tudo.id]">
+        <ion-label>
+          {{tudo.nome}}
+       </ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-options (click)="onRemove(item)" color="primary">
+          <ion-icon name="checkmark" slot="end"></ion-icon>
+        </ion-item-options>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+  <ion-fab  vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button routerLink="/usuarios" routerDirection="forward">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

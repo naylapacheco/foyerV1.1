@@ -5,9 +5,18 @@
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content padding>
     <ion-item [routerLink]="['//']"><ion-icon name="megaphone"></ion-icon>Ocorrência</ion-item> 
     <ion-item [routerLink]="['//']"><ion-icon name="notifications"></ion-icon>Notificações</ion-item> 
     <ion-item [routerLink]="['//']"><ion-icon name="mail"></ion-icon>Reclamções</ion-item> 
+
+    
+
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button (click)="enviarmsg()">
+          <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
 </ion-content>
 

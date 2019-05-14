@@ -35,6 +35,25 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'mural',
+        children: [
+          {
+            path: '',
+            loadChildren: '../mural/mural.module#MuralPageModule'
+          }
+        ]
+      },
+      {
+        path: 'eventos',
+        children: [
+          {
+            path: '',
+            loadChildren: '../eventos/eventos.module#EventosPageModule'
+          }
+        ]
+      },
+      
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'

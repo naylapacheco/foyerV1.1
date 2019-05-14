@@ -1,0 +1,42 @@
+
+<ion-header>
+  <ion-toolbar align=center color="secondary">
+      <ion-buttons color="white"></ion-buttons>
+      <ion-back-button></ion-back-button>
+      <ion-title>Mensagens</ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding align=center>
+    <ion-item>
+        <ion-label position="start">Para:</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label position="start">Assunto:</ion-label>
+          <ion-input type="text"></ion-input>
+      </ion-item><br><br>
+      <ion-list>
+      <ion-item>
+          <ion-label>Tipo de Ocorrência</ion-label>
+          <ion-select okText="Ok" cancelText="Cancelar">
+            <ion-select-option value="barulho">Barulho</ion-select-option>
+            <ion-select-option value="vandalismo">Vandalismo</ion-select-option>
+           
+          </ion-select>
+        </ion-item>
+      
+      </ion-list>
+      
+      <ion-item class="text">
+          <ion-label position="floating"><b>Descrição</b></ion-label>
+          <ion-textarea></ion-textarea>
+        </ion-item>
+
+        <ion-button type="submit" color="primary">Enviar</ion-button>
+      
+         
+          
+       
+</ion-content>
