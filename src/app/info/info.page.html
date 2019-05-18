@@ -12,7 +12,10 @@
       </ion-item>
 
       <ion-item *ngIf="tudo">
-        <ion-input type="text" placeholder="Email" [(ngModel)]="tudo.priority"></ion-input>
+        <ion-input type="text" placeholder="Email" [(ngModel)]="tudo.email"></ion-input>
+      </ion-item>
+      <ion-item *ngIf="tudo">
+        <ion-input type="text" placeholder="CPF" [(ngModel)]="tudo.cpf"></ion-input>
       </ion-item>
         </ion-list>
 

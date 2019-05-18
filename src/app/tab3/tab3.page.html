@@ -2,10 +2,29 @@
     
   <ion-toolbar align=center color="secondary">
     <div id="header">
-        <ion-avatar>
+        <ion-avatar >
             <img align=center src="../../assets/img/logo.png"/>
         </ion-avatar>
       </div>
+      <ion-list lines="full">
+    
+        <ion-item *ngIf="tudo">
+         <ion-input type="text" placeholder="Nome" [(ngModel)]="tudo.nome"></ion-input>
+        </ion-item>
+  
+        <ion-item *ngIf="tudo">
+          <ion-input type="text" placeholder="Email" [(ngModel)]="tudo.email">{{tudo.email}}</ion-input>
+        </ion-item>
+        <ion-item *ngIf="tudo">
+          <ion-input type="text" placeholder="CPF" [(ngModel)]="tudo.cpf"></ion-input>
+        </ion-item>
+          </ion-list>
+      <ion-button block (click)="ngOnInit()">Escolher Foto</ion-button>
+    <ion-item>
+        
+      <ion-label class="ion-text-wrap">URL de download: {{downloadUrl | async}}</ion-label>
+    </ion-item>
+
   </ion-toolbar>
   
 </ion-header>
@@ -13,7 +32,7 @@
 <ion-content padding align=center>
   
        
-  <ion-label align="center" class="sizedescricao">Condomínio</ion-label>
+  <ion-label align="center" class="sizedescricao">Condomínio {{tudo.nome}}</ion-label>
   
 
 

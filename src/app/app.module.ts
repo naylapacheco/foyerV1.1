@@ -15,6 +15,15 @@ import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { Camera } from '@ionic-native/camera/ngx';
+import { File } from '@ionic-native/file/ngx';
+import { TabsPageModule } from './tabs/tabs.module';
+
+
+
+
+
 
 
 @NgModule({
@@ -27,13 +36,19 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
     AppRoutingModule,
     NgCalendarModule,
     HttpModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    TabsPageModule,
+    
+   
+
     ],
   
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    Camera,
+    File
   ],
   bootstrap: [AppComponent]
 })

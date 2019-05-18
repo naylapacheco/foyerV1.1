@@ -7,6 +7,9 @@ import { AngularFireAuth } from '@angular/fire/auth';
 import { auth } from 'firebase/app';
 
 
+
+
+
 @Component({
   selector: 'app-cadastro',
   templateUrl: './cadastro.page.html',
@@ -35,31 +38,49 @@ export class CadastroPage {
     numapart:''
   }
 
-  constructor(private route:ActivatedRoute, private nav: NavController,private toastCtrl: ToastController,
+  constructor(private nav: NavController,private toastCtrl: ToastController,
     private usuariosService: UsuariosService, private router: Router, public afAuth: AngularFireAuth) { }
 
 
-   addTudo(){
-      this.usuariosService.addTudo(this.cadastro).then(() => {
-        this.router.navigateByUrl('/login');
-      });    
-   }
+  addTudo(){
+    this.usuariosService.addTudo(this.cadastro).then(() => {
+      this.router.navigateByUrl('/login');
+    });   
+  }
 
   async registrar(){
    const {email, senha , confsenha} = this
    if(senha !== confsenha){
      console.error("senha não se conhecidem")
+    
    }
    try{
      const res = await this.afAuth.auth.createUserWithEmailAndPassword(email , senha) 
     console.log(res)
+    this.addTudo(); 
+     
     }
    catch(error){
     console.dir(error)
 
    }
+
+   
+   async function presentAlert() {
+    const alertController = document.querySelector('ion-alert-controller');
+    await alertController.componentOnReady();
+  
+    const alert = await alertController.create({
+      header: 'Alert',
+      subHeader: 'Subtitle',
+      message: 'Senhas não são iguais, tente novamente!',
+      buttons: ['OK']
+    });
+    return await alert.present();
+  }
+  };
  }
-}
+
 
  
 
