@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: 'usuarios/:id', loadChildren: './usuarios/usuarios.module#UsuariosPageModule' },
   { path: 'usuarios', loadChildren: './usuarios/usuarios.module#UsuariosPageModule' },
   { path: 'info/:id', loadChildren: './info/info.module#InfoPageModule' },
+  { path: 'feed', loadChildren: './feed/feed.module#FeedPageModule' },
 
   
 ];
