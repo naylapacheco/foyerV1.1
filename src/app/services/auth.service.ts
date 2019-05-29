@@ -50,6 +50,10 @@ login(email:string, senha:string){
 
   
 }
+//takvez eu tenha que tirar isso
+getAuth() {
+  return this.AFauth.auth;
+}
 
   async LoginToast() {
     const toast = await this.toast.create({

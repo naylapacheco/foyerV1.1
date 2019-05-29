@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "183343526343",
+    "firebase_url": "https://foyer-72de4.firebaseio.com",
+    "project_id": "foyer-72de4",
+    "storage_bucket": "foyer-72de4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183343526343:android:f92460dad4f018ee",
+        "android_client_info": {
+          "package_name": "com.etec1.foyer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "183343526343-9ohgebl73lr54dnoj210h3h9aggah1v7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4K4IpkCjdggcHsGlp97o1lFgVlrhIUeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "183343526343-9ohgebl73lr54dnoj210h3h9aggah1v7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

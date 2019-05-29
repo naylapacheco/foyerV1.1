@@ -16,9 +16,13 @@ import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireStorageModule } from '@angular/fire/storage';
+
 import { Camera } from '@ionic-native/camera/ngx';
 import { File } from '@ionic-native/file/ngx';
 import { TabsPageModule } from './tabs/tabs.module';
+import { Firebase } from '@ionic-native/firebase/ngx';
+
+//import { FCM } from '@ionic-native/fcm/ngx'
 
 
 
@@ -45,6 +49,8 @@ import { TabsPageModule } from './tabs/tabs.module';
   
   providers: [
     StatusBar,
+    //FCM,
+    Firebase,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     Camera,
